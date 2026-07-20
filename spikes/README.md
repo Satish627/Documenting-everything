@@ -13,5 +13,9 @@ assumed stack (Next.js + TypeScript on Vercel, PostgreSQL). Every assumption is 
 | 02 | [Nudge emails for incomplete onboarding](02-nudge-emails.md) | Plan #2 / Guide #1 | Draft |
 | 03 | [NIUM biometric notifications](03-nium-biometric-notifications.md) | Plan #4 / Guide #4 | Draft |
 | 04 | [Penneo power-of-attorney automation](04-penneo-power-of-attorney.md) | Plan #5 / Guide #9 | Draft |
+| 05 | [Slack notifications (migrate off Retool)](05-slack-notifications.md) | Plan #6 / Guide #6 | Draft |
+| 06 | [Platform banner system](06-platform-banner.md) | Plan #7 / Guide #5 | Draft |
+| 07 | [PLUNK setup (marketing & nudges)](07-plunk-setup.md) | Plan #8 / Guide #7 | Draft |
+| 08 | [RFI support automation](08-rfi-support-automation.md) | Plan #9 / Guide #8 | Draft |
 
 Template: **Problem → Questions → Findings → Recommendation → Open questions → Next steps.**
