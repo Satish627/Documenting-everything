@@ -5,7 +5,7 @@
 
 > Goal from the guide: *"Complete biometric in a test account → notification pops up within 30
 > seconds,"* which then triggers the next workflow (card prep). This is the **trigger point** that
-> also unblocks the Penneo power-of-attorney automation (Spike 05 / Guide #9).
+> also unblocks the Penneo power-of-attorney automation (Spike 04 / Guide #9).
 
 ---
 
@@ -73,7 +73,7 @@ on day one:
 - **Automate now:** verify → notify Slack → update user status → **create a task/draft** for the
   next step (e.g. "ready for LOA / card prep").
 - **Keep human-gated:** actually issuing a card or moving funds. Draft, don't fire (non-negotiable #1).
-- This makes the biometric event the clean hand-off into **Spike 05 (Penneo LOA)** without wiring
+- This makes the biometric event the clean hand-off into **Spike 04 (Penneo LOA)** without wiring
   an irreversible chain end-to-end before anyone's confirmed it's safe.
 
 ### Handler shape (pseudocode)
@@ -119,5 +119,5 @@ Reuse the Slack path from Guide #6. Keep every irreversible card/fund action hum
 - [ ] Read the NIUM webhook docs; pin down the exact "passed" event + signature scheme.
 - [ ] Prototype the handler against a **mock NIUM payload** in the local skeleton (signature verify,
       idempotency, Slack format) — no real NIUM calls.
-- [ ] Coordinate with Spike 05 (Penneo) on the `prepare_loa` hand-off contract.
+- [ ] Coordinate with Spike 04 (Penneo) on the `prepare_loa` hand-off contract.
 - [ ] Confirm the Slack channel + reuse of the Guide #6 integration.

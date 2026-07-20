@@ -12,5 +12,6 @@ assumed stack (Next.js + TypeScript on Vercel, PostgreSQL). Every assumption is 
 | 01 | [Vercel staging + prod + secrets](01-vercel-staging-prod.md) | Plan #1 / Guide #3 | Draft |
 | 02 | [Nudge emails for incomplete onboarding](02-nudge-emails.md) | Plan #2 / Guide #1 | Draft |
 | 03 | [NIUM biometric notifications](03-nium-biometric-notifications.md) | Plan #4 / Guide #4 | Draft |
+| 04 | [Penneo power-of-attorney automation](04-penneo-power-of-attorney.md) | Plan #5 / Guide #9 | Draft |
 
 Template: **Problem → Questions → Findings → Recommendation → Open questions → Next steps.**
