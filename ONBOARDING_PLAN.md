@@ -33,8 +33,8 @@ Ordered by **priority + dependency + build-confidence**, not by the guide's numb
 
 ## Day-1 readiness checklist (do before you start)
 
-- [ ] Draft an **access request list** — one line per system, why you need it, what level:
-      Postmark, PLUNK, Vercel, NIUM, Banking Circle, Penneo, HubSpot, Slack, the database, Retool, GitHub/repo.
+- [ ] Use the phased **access request checklist** (`ACCESS_CHECKLIST.md`) — request access task by
+      task, not all upfront. Start with the Foundation block only.
 - [ ] Collect and skim the **API docs** for each vendor (see `CLAUDE.md` table).
 - [ ] Stand up a **local Next.js + TypeScript skeleton** to prototype against (mock data only).
 - [ ] Set up a `spikes/` folder and a note-taking habit.

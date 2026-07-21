@@ -91,10 +91,20 @@ call prod." Domain routing is the trivial part and follows Vercel defaults.
 
 ## Open questions (align in week 1)
 
-- Do the prod/staging domains already exist, or do I create them?
-- Is there already a Vercel project + GitHub repo, or is this greenfield?
-- Which vendors have a real sandbox mode vs. only a second API key? (Drives task #4, #5 safety.)
-- Is there a separate staging database provisioned, or do I request one?
+Two buckets: things I need **granted** (credentials/access) vs. things I need **told** (facts that
+shape the design). Both come from the same day-1 conversation with my manager.
+
+**Access to request** (→ Foundation block in `ACCESS_CHECKLIST.md`)
+
+- [ ] GitHub repo access + Vercel team access — or confirmation the project already exists so I get added.
+- [ ] The production domain + a `staging.` subdomain — or the go-ahead to create them.
+- [ ] A staging database connection string — or the go-ahead to provision one.
+
+**Facts to confirm** (information, not credentials)
+
+- [ ] Is this greenfield, or is there already a Vercel project + repo wired up?
+- [ ] Which vendors have a real sandbox mode vs. only a second API key? (Shapes Spikes 03, 04, 07, 08.)
+- [ ] Do the domains / staging DB already exist, or am I setting them up from scratch?
 
 ## Next steps
 
