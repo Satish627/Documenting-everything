@@ -55,10 +55,20 @@ users — a clean quick win with no risky surface.
 
 ## Open questions (align in week 1)
 
-- One global banner at a time, or multiple/targeted (by segment)? (Start with one global.)
-- Franklin design guidelines for the severity styles.
-- Is Retool the agreed admin surface here?
-- Do banners need bilingual copy, or is the audience's language known?
+Two buckets: things I need **granted** (credentials/access) vs. things I need **told** (facts that
+shape the design).
+
+**Access to request** (→ Task 6 block in `ACCESS_CHECKLIST.md`)
+
+- [ ] **Retool access** (to build the admin surface).
+- [ ] Franklin **design guidelines / design system** for the severity styles.
+- [ ] (Banner config lives in the database I already have.)
+
+**Facts to confirm** (information, not credentials)
+
+- [ ] One global banner at a time, or multiple/targeted by segment? (Recommend starting with one global.)
+- [ ] Is Retool the agreed admin surface here?
+- [ ] Do banners need bilingual copy, or is the audience's language known?
 
 ## Next steps
 

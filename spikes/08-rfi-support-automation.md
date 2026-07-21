@@ -67,11 +67,22 @@ to spike it further once the real RFI history is available.
 
 ## Open questions (align in week 1)
 
-- Where do RFIs actually arrive (email, partner portal, both), and do they already hit HubSpot?
-- What RFI types exist, and which are safe to template vs. always-escalate?
-- Is there a history of resolved RFIs to ground drafts in?
-- What's the routing map (type → owner)?
-- Which model/tooling, and cost/latency budget per RFI (operational concern from the case)?
+Two buckets: things I need **granted** (credentials/access) vs. things I need **told** (facts that
+shape the design).
+
+**Access to request** (→ Task 8 block in `ACCESS_CHECKLIST.md`)
+
+- [ ] **HubSpot access** + `HUBSPOT_TOKEN` — **sandbox** first.
+- [ ] Access to the **RFI intake channel(s)** (email inbox / partner portal).
+- [ ] Access to the **resolved-RFI history**, if one exists, to ground drafts in.
+
+**Facts to confirm** (information, not credentials)
+
+- [ ] Where do RFIs actually arrive (email, partner portal, both), and do they already hit HubSpot?
+- [ ] What RFI types exist, and which are **safe to template** vs. **always-escalate**?
+- [ ] Is there a usable history of resolved RFIs at all?
+- [ ] What's the routing map (type → owner)?
+- [ ] Which model/tooling, and the cost/latency budget per RFI (operational concern from the case)?
 
 ## Next steps
 

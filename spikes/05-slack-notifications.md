@@ -65,10 +65,20 @@ single `notifySlack(event)` to call instead of three bespoke integrations.
 
 ## Open questions (align in week 1)
 
-- The authoritative list of "critical" events and their payloads.
-- Where events originate today (Retool logic to replace) and what the event source of truth is.
-- Do we need a queue/worker, or is short-interval polling of the outbox acceptable for "10s"?
-- Which Slack channels, and who owns them.
+Two buckets: things I need **granted** (credentials/access) vs. things I need **told** (facts that
+shape the design).
+
+**Access to request** (→ Task 5 block in `ACCESS_CHECKLIST.md`)
+
+- [ ] `SLACK_WEBHOOK_URL` — **staging** channel (`#alerts-staging`) and **prod** channel (`#alerts`).
+- [ ] Access to the **event source** / current Retool logic, so I can see what's monitored today.
+
+**Facts to confirm** (information, not credentials)
+
+- [ ] The authoritative list of "critical" events and their payloads.
+- [ ] Where events originate today, and what the event **source of truth** is.
+- [ ] Do we need a queue/worker, or is short-interval polling of the outbox acceptable for "10s"?
+- [ ] Which Slack channels, and who owns them.
 
 ## Next steps
 

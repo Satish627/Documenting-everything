@@ -59,10 +59,20 @@ a couple of flows now; wiring the data sync waits for access.
 
 ## Open questions (align in week 1)
 
-- Confirm the Postmark/PLUNK ownership split.
-- How does user data get into PLUNK (sync, API, manual)?
-- Where is marketing consent stored, and what's the unsubscribe mechanism?
-- Which campaigns does marketing actually want first?
+Two buckets: things I need **granted** (credentials/access) vs. things I need **told** (facts that
+shape the design).
+
+**Access to request** (→ Task 7 block in `ACCESS_CHECKLIST.md`)
+
+- [ ] **PLUNK account access**.
+- [ ] `PLUNK_API_KEY` — **test** first.
+
+**Facts to confirm** (information, not credentials)
+
+- [ ] Confirm the **Postmark = transactional / PLUNK = marketing** ownership split.
+- [ ] How does user data get into PLUNK (sync, API, manual)?
+- [ ] Where is **marketing consent** stored, and what's the unsubscribe mechanism?
+- [ ] Which campaigns does marketing actually want first?
 
 ## Next steps
 

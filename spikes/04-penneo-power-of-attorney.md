@@ -105,12 +105,24 @@ Spike 03 and the Slack notifier for status/failures.
 
 ## Open questions (align in week 1)
 
-- Who provides the **LOA template**, and what are its exact required fields?
-- Penneo API specifics: casefile model, how the signing link is delivered, webhook signature scheme.
-- What NIUM endpoint receives the signed doc, and in what format/metadata?
-- Is the customer or ops the one who verifies details before signing?
-- Is ops comfortable auto-filing to **live** NIUM once sandbox is proven, or should it stay human-triggered?
-- Retention/GDPR: how long do we store the signed PDF, and where?
+Two buckets: things I need **granted** (credentials/access) vs. things I need **told** (facts that
+shape the design).
+
+**Access to request** (→ Task 4 block in `ACCESS_CHECKLIST.md`)
+
+- [ ] `PENNEO_API_BASE_URL` + `PENNEO_API_KEY` — **sandbox** first.
+- [ ] Penneo **webhook secret** (to verify the "signed" webhook).
+- [ ] The **LOA template document** itself, from whoever owns the legal doc.
+- [ ] The **NIUM upload endpoint** details (NIUM credentials already obtained in Task 3).
+
+**Facts to confirm** (information, not credentials)
+
+- [ ] Who owns the LOA template, and what are its exact **required fields**?
+- [ ] Penneo API specifics: casefile model, how the signing link is delivered, signature scheme.
+- [ ] What format/metadata does the NIUM endpoint expect for the signed doc?
+- [ ] Is the **customer or ops** the one who verifies details before signing?
+- [ ] Is ops comfortable auto-filing to **live** NIUM once sandbox is proven, or stay human-triggered?
+- [ ] Retention/GDPR: how long do we store the signed PDF, and where?
 
 ## Next steps
 

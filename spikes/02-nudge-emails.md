@@ -139,11 +139,21 @@ live run goes to a test/internal address only (non-negotiable #1).
 
 ## Open questions (align in week 1)
 
-- What are the real onboarding tables/columns, and the canonical list of required steps?
-- Where is `language` stored, and is there a suppression/unsubscribe flag already? (GDPR/marketing consent.)
-- Postmark vs PLUNK — which owns these onboarding nudges? (Boundary with task #8.)
-- Cadence: are the 2/5/10-day thresholds sensible for our funnel, or is there data to tune them?
-- Do we need an unsubscribe link / is this transactional or marketing under consent rules?
+Two buckets: things I need **granted** (credentials/access) vs. things I need **told** (facts that
+shape the design).
+
+**Access to request** (→ Task 1 block in `ACCESS_CHECKLIST.md`)
+
+- [ ] `POSTMARK_SERVER_TOKEN` — **test** token first (live only at go-live).
+- [ ] Postmark account access (to build/inspect templates).
+
+**Facts to confirm** (information, not credentials)
+
+- [ ] The real onboarding tables/columns, and the canonical list of required steps.
+- [ ] Where `language` is stored, and whether a suppression/unsubscribe flag already exists.
+- [ ] Postmark vs PLUNK — which owns these onboarding nudges? (Boundary with Spike 07.)
+- [ ] Cadence: are the 2/5/10-day thresholds sensible for our funnel, or is there data to tune them?
+- [ ] Is this **transactional** or **marketing** under consent rules — do we need an unsubscribe link?
 
 ## Next steps
 

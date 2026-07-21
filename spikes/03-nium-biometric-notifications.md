@@ -107,12 +107,24 @@ Reuse the Slack path from Guide #6. Keep every irreversible card/fund action hum
 
 ## Open questions (align in week 1)
 
-- Exactly which NIUM event type/status = biometric passed? (And what are the failure/review statuses?)
-- How does NIUM sign webhooks (HMAC secret? header?) so we can verify them?
-- Which reference id links a NIUM event to our user record?
-- Which Slack channel, and is the Guide #6 Slack integration ready to reuse?
-- What is the *intended* full downstream chain (card creation, settlement setup) — and which parts
-  is ops comfortable automating vs. keeping manual?
+Two buckets: things I need **granted** (credentials/access) vs. things I need **told** (facts that
+shape the design).
+
+**Access to request** (→ Task 3 block in `ACCESS_CHECKLIST.md`)
+
+- [ ] `NIUM_API_BASE_URL` + `NIUM_API_KEY` — **sandbox** first.
+- [ ] NIUM **webhook signing secret** (to verify incoming webhooks).
+- [ ] A **NIUM test account** I can push through biometric verification.
+- [ ] `SLACK_WEBHOOK_URL` (staging channel) — needed here even though Slack is formally Task 5.
+
+**Facts to confirm** (information, not credentials)
+
+- [ ] Exactly which NIUM event type/status = biometric passed? (And the failure/review statuses?)
+- [ ] How does NIUM **sign** webhooks (HMAC? which header?) so we can verify them?
+- [ ] Which reference id links a NIUM event to our user record?
+- [ ] Which Slack channel, and is the Spike 05 Slack integration ready to reuse?
+- [ ] The *intended* full downstream chain (card creation, settlement setup) — and which parts is
+      ops comfortable automating vs. keeping manual?
 
 ## Next steps
 
