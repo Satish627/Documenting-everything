@@ -4,6 +4,9 @@ Request access **task by task**, not all at once. Each block below lists only wh
 so when you start a task, you ask for that block and nothing more. Keeps requests small, justified,
 and easy for your manager to approve.
 
+Blocks are numbered by **`Plan #`** (the sequence in `ONBOARDING_PLAN.md`) so the references line up
+across every file. `Plan #1` is the foundation you need before anything else.
+
 ## How to use this
 
 - Work top-down. Only open the block for the task you're **actually starting**.
@@ -16,8 +19,8 @@ and easy for your manager to approve.
 
 ---
 
-## Foundation — one-time, request before anything else
-*(Enables Vercel staging + prod — Spike 01. You need this before any task.)*
+## Plan #1 — Foundation: Vercel staging + prod *(Guide #3)*
+*One-time — request before anything else. Enables [Spike 01](spikes/01-vercel-staging-prod.md).*
 
 - [ ] 🖥️ **GitHub repo access** to the Franklin app (write/PR).
 - [ ] 🖥️ **Vercel team access**, with the app project connected to the GitHub repo.
@@ -29,7 +32,7 @@ and easy for your manager to approve.
 
 ---
 
-## Task 1 — Nudge emails *(Plan #2 / Guide #1)*
+## Plan #2 — Nudge emails *(Guide #1)*
 *Request when you start building the nudge flow.*
 
 - [ ] 🔑 **`POSTMARK_SERVER_TOKEN`** — **test** token first (live later, at go-live).
@@ -37,49 +40,49 @@ and easy for your manager to approve.
       already have the staging DB; this is about knowing the shape.
 - [ ] (Scheduler = Vercel Cron — no key needed.)
 
-## Task 2 — Month-end close template *(Plan #3 / Guide #2)*
+## Plan #3 — Month-end close template *(Guide #2)*
 *Request when you build the template.*
 
-- [ ] 🖥️ **Postmark template access** (same Postmark account as Task 1 — likely nothing new to request).
+- [ ] 🖥️ **Postmark template access** (same Postmark account as Plan #2 — likely nothing new to request).
 
-## Task 3 — NIUM biometric notifications *(Plan #4 / Guide #4)*
+## Plan #4 — NIUM biometric notifications *(Guide #4)*
 *Request when you start the webhook handler.*
 
 - [ ] 🔑 **`NIUM_API_BASE_URL`** + **`NIUM_API_KEY`** — **sandbox** first.
 - [ ] 🔑 **NIUM webhook signing secret** (to verify incoming webhooks).
 - [ ] 🖥️ A **NIUM test account** you can push through biometric verification.
 - [ ] 🔑 **`SLACK_WEBHOOK_URL`** (staging channel) — *this task notifies via Slack, so you may want
-      the staging Slack webhook early even though Slack is formally Task 5.*
+      the staging Slack webhook early even though Slack is formally Plan #6.*
 
-## Task 4 — Penneo power-of-attorney *(Plan #5 / Guide #9)*
+## Plan #5 — Letter of Authorization / Penneo power-of-attorney *(Guide #9)*
 *Request when you start the signing flow.*
 
 - [ ] 🔑 **`PENNEO_API_BASE_URL`** + **`PENNEO_API_KEY`** — **sandbox** first.
 - [ ] 🔑 **Penneo webhook secret** (to verify the "signed" webhook).
-- [ ] 🖥️ The **NIUM upload endpoint** details for filing the signed doc (you already have NIUM keys from Task 3).
+- [ ] 🖥️ The **NIUM upload endpoint** details for filing the signed doc (you already have NIUM keys from Plan #4).
 - [ ] 📄 The **LOA template** + its required fields (from whoever owns the legal doc).
 
-## Task 5 — Slack notifications *(Plan #6 / Guide #6)*
+## Plan #6 — Slack notifications *(Guide #6)*
 *Request when you build the shared notifier.*
 
 - [ ] 🔑 **`SLACK_WEBHOOK_URL`** — **staging channel** (`#alerts-staging`) and **prod channel** (`#alerts`).
 - [ ] 🖥️ Access to the **event source** (whatever Retool monitors today) so you know what to detect.
 
-## Task 6 — Platform banner *(Plan #7 / Guide #5)*
+## Plan #7 — Platform banner *(Guide #5)*
 *Request when you build the banner.*
 
 - [ ] 🖥️ **Retool access** (to build the admin surface).
 - [ ] 🖥️ Franklin **design guidelines** for the severity styles.
 - [ ] (Config lives in the DB you already have.)
 
-## Task 7 — PLUNK *(Plan #8 / Guide #7)*
+## Plan #8 — PLUNK *(Guide #7)*
 *Request when you set up marketing automation.*
 
 - [ ] 🖥️ **PLUNK account access**.
 - [ ] 🔑 **`PLUNK_API_KEY`** — **test** first.
 - [ ] 🖥️ How **user data syncs into PLUNK**, and where **marketing consent** is stored.
 
-## Task 8 — RFI support automation *(Plan #9 / Guide #8)*
+## Plan #9 — RFI support automation *(Guide #8)*
 *Request when you start the RFI pipeline.*
 
 - [ ] 🖥️ **HubSpot access** + 🔑 **`HUBSPOT_TOKEN`** — **sandbox** first.

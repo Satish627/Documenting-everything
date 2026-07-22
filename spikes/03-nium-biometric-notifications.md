@@ -39,12 +39,12 @@ cards, so the automated part must stop short of anything irreversible without a 
 
 | Option | Pros | Cons |
 |---|---|---|
-| **Slack** ✅ | Instant, visible to the ops team, matches the "critical alerts to Slack" direction (Guide #6) | Needs a channel + webhook |
+| **Slack** ✅ | Instant, visible to the ops team, matches the "critical alerts to Slack" direction (Spike 05) | Needs a channel + webhook |
 | Email | Simple | Slower, easy to miss, clutter |
 | Dashboard only | Persistent record | Nobody's watching it in real time |
 
 **Recommend Slack for the human-facing alert**, *and* write the status to the user's record so the
-dashboard reflects it too. This reuses the Slack integration we're building in Guide #6 — one
+dashboard reflects it too. This reuses the Slack integration we're building in Spike 05 — one
 notification path, not three. (Confirm the channel with the team.)
 
 ### 3. Reliability + security (the part that actually matters)
@@ -103,19 +103,19 @@ export async function POST(req) {
 
 Build a **signed, idempotent, async NIUM webhook handler** that on the *biometric-passed* event
 updates the user's status, alerts **Slack**, and **enqueues** (not auto-executes) the next step.
-Reuse the Slack path from Guide #6. Keep every irreversible card/fund action human-gated for now.
+Reuse the Slack path from Spike 05. Keep every irreversible card/fund action human-gated for now.
 
 ## Open questions (align in week 1)
 
 Two buckets: things I need **granted** (credentials/access) vs. things I need **told** (facts that
 shape the design).
 
-**Access to request** (→ Task 3 block in `ACCESS_CHECKLIST.md`)
+**Access to request** (→ Plan #4 block in `ACCESS_CHECKLIST.md`)
 
 - [ ] `NIUM_API_BASE_URL` + `NIUM_API_KEY` — **sandbox** first.
 - [ ] NIUM **webhook signing secret** (to verify incoming webhooks).
 - [ ] A **NIUM test account** I can push through biometric verification.
-- [ ] `SLACK_WEBHOOK_URL` (staging channel) — needed here even though Slack is formally Task 5.
+- [ ] `SLACK_WEBHOOK_URL` (staging channel) — needed here even though Slack is formally Plan #6.
 
 **Facts to confirm** (information, not credentials)
 
@@ -132,4 +132,4 @@ shape the design).
 - [ ] Prototype the handler against a **mock NIUM payload** in the local skeleton (signature verify,
       idempotency, Slack format) — no real NIUM calls.
 - [ ] Coordinate with Spike 04 (Penneo) on the `prepare_loa` hand-off contract.
-- [ ] Confirm the Slack channel + reuse of the Guide #6 integration.
+- [ ] Confirm the Slack channel + reuse of the Spike 05 integration.

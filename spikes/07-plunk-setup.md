@@ -62,7 +62,7 @@ a couple of flows now; wiring the data sync waits for access.
 Two buckets: things I need **granted** (credentials/access) vs. things I need **told** (facts that
 shape the design).
 
-**Access to request** (→ Task 7 block in `ACCESS_CHECKLIST.md`)
+**Access to request** (→ Plan #8 block in `ACCESS_CHECKLIST.md`)
 
 - [ ] **PLUNK account access**.
 - [ ] `PLUNK_API_KEY` — **test** first.

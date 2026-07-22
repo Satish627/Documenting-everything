@@ -70,7 +70,7 @@ to spike it further once the real RFI history is available.
 Two buckets: things I need **granted** (credentials/access) vs. things I need **told** (facts that
 shape the design).
 
-**Access to request** (→ Task 8 block in `ACCESS_CHECKLIST.md`)
+**Access to request** (→ Plan #9 block in `ACCESS_CHECKLIST.md`)
 
 - [ ] **HubSpot access** + `HUBSPOT_TOKEN` — **sandbox** first.
 - [ ] Access to the **RFI intake channel(s)** (email inbox / partner portal).

@@ -82,7 +82,7 @@ Ordered by **priority + dependency + build-confidence**, not by the guide's numb
 - 🔒 **Needs access:** NIUM sandbox/webhooks, a test account to complete biometrics.
 - **Success:** complete biometric in a test account → notification within 30s.
 
-### 5. Penneo power-of-attorney automation  *(guide #9 — P2 critical, depends on #4)*
+### 5. Letter of Authorization (Penneo power-of-attorney) automation  *(guide #9 — P2 critical, depends on #4)*
 **Goal:** User triggers signing → PDF generated → Penneo signing flow → on signed, auto-upload to NIUM.
 
 - 🟢 **Prep:** Map the full chain (DB pull user+company → generate PDF from template → Penneo

@@ -108,12 +108,12 @@ Spike 03 and the Slack notifier for status/failures.
 Two buckets: things I need **granted** (credentials/access) vs. things I need **told** (facts that
 shape the design).
 
-**Access to request** (→ Task 4 block in `ACCESS_CHECKLIST.md`)
+**Access to request** (→ Plan #5 block in `ACCESS_CHECKLIST.md`)
 
 - [ ] `PENNEO_API_BASE_URL` + `PENNEO_API_KEY` — **sandbox** first.
 - [ ] Penneo **webhook secret** (to verify the "signed" webhook).
 - [ ] The **LOA template document** itself, from whoever owns the legal doc.
-- [ ] The **NIUM upload endpoint** details (NIUM credentials already obtained in Task 3).
+- [ ] The **NIUM upload endpoint** details (NIUM credentials already obtained in Plan #4).
 
 **Facts to confirm** (information, not credentials)
 

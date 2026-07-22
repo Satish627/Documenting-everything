@@ -18,4 +18,8 @@ assumed stack (Next.js + TypeScript on Vercel, PostgreSQL). Every assumption is 
 | 07 | [PLUNK setup (marketing & nudges)](07-plunk-setup.md) | Plan #8 / Guide #7 | Draft |
 | 08 | [RFI support automation](08-rfi-support-automation.md) | Plan #9 / Guide #8 | Draft |
 
+> **No spike for Plan #3 / Guide #2 (month-end close template) — by design.** It's a straightforward
+> Postmark build with no unknowns to de-risk; its details live in `ONBOARDING_PLAN.md` and it shares
+> Postmark groundwork with Spike 02. That's why the Plan# column skips #3.
+
 Template: **Problem → Questions → Findings → Recommendation → Open questions → Next steps.**

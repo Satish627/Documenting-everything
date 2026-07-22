@@ -68,7 +68,7 @@ single `notifySlack(event)` to call instead of three bespoke integrations.
 Two buckets: things I need **granted** (credentials/access) vs. things I need **told** (facts that
 shape the design).
 
-**Access to request** (→ Task 5 block in `ACCESS_CHECKLIST.md`)
+**Access to request** (→ Plan #6 block in `ACCESS_CHECKLIST.md`)
 
 - [ ] `SLACK_WEBHOOK_URL` — **staging** channel (`#alerts-staging`) and **prod** channel (`#alerts`).
 - [ ] Access to the **event source** / current Retool logic, so I can see what's monitored today.

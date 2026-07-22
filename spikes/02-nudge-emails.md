@@ -142,7 +142,7 @@ live run goes to a test/internal address only (non-negotiable #1).
 Two buckets: things I need **granted** (credentials/access) vs. things I need **told** (facts that
 shape the design).
 
-**Access to request** (→ Task 1 block in `ACCESS_CHECKLIST.md`)
+**Access to request** (→ Plan #2 block in `ACCESS_CHECKLIST.md`)
 
 - [ ] `POSTMARK_SERVER_TOKEN` — **test** token first (live only at go-live).
 - [ ] Postmark account access (to build/inspect templates).

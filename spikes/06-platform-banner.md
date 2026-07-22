@@ -58,7 +58,7 @@ users — a clean quick win with no risky surface.
 Two buckets: things I need **granted** (credentials/access) vs. things I need **told** (facts that
 shape the design).
 
-**Access to request** (→ Task 6 block in `ACCESS_CHECKLIST.md`)
+**Access to request** (→ Plan #7 block in `ACCESS_CHECKLIST.md`)
 
 - [ ] **Retool access** (to build the admin surface).
 - [ ] Franklin **design guidelines / design system** for the severity styles.
