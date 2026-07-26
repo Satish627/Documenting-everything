@@ -54,7 +54,7 @@ Each phrased as *"here's my assumption — correct me,"* not open-ended.
 ## First-week arc
 
 - [ ] Get Foundation access; confirm stack + conventions.
-- [ ] See what already exists for each task (avoid reinventing).
+- [ ] See what already exists for each task (avoid reinventing) — use `REPO_SYNC_IN.md`.
 - [ ] Ship the **Vercel staging/prod foundation** — small, visible, unblocks everyone.
 - [ ] Friday: short note in the team channel — what I set up, what I confirmed, what I'm picking up next.
 
